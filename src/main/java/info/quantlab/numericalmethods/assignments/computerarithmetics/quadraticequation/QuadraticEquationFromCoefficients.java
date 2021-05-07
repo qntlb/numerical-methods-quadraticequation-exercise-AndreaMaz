@@ -40,7 +40,10 @@ public class QuadraticEquationFromCoefficients implements QuadraticEquation {
 			return -p;
 		} else {
 			if (p > 0) {
-				// the two terms have same sign in this case
+				/*
+				 * the two terms have same sign in this case, so the large absolute error
+				 * remains now on a large scale.
+				 */
 				return -p / 2 - Math.sqrt(p * p / 4 - q);
 			} else {
 				/*
