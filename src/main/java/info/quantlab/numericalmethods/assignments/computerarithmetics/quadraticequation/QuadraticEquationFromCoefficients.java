@@ -25,7 +25,8 @@ public class QuadraticEquationFromCoefficients implements QuadraticEquation {
 
 	@Override
 	public boolean hasRealRoot() {
-		// we simply return such a boolean
+
+		// we simply return such a boolean. Note that no parenthesis are needed
 		return p * p / 4 - q >= 0;
 	}
 
